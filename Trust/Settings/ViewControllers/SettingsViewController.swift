@@ -74,7 +74,7 @@ final class SettingsViewController: FormViewController, Coordinator {
         super.viewDidLoad()
         title = R.string.localizable.settingsNavigationTitle()
         form = Section()
-
+            
             <<< walletsRow(for: session.account)
 
             +++ Section(R.string.localizable.settingsSecurityLabelTitle())
@@ -123,9 +123,12 @@ final class SettingsViewController: FormViewController, Coordinator {
             +++ Section(R.string.localizable.settingsJoinCommunityLabelTitle())
 
             <<< linkProvider(type: .twitter)
-            <<< linkProvider(type: .telegram)
+//            <<< linkProvider(type: .telegram)
             <<< linkProvider(type: .facebook)
-            <<< linkProvider(type: .discord)
+//            <<< linkProvider(type: .discord)
+            <<< linkProvider(type: .instagram)
+            <<< linkProvider(type: .medium)
+            <<< linkProvider(type: .reddit)
 
             +++ Section()
             <<< linkProvider(type: .helpCenter)

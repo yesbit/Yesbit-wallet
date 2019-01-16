@@ -26,7 +26,7 @@ struct CoinViewModel {
     var symbol: String {
         switch coin {
         case .ethereum: return "ETH"
-        case .ethereumTest: return "ETH"
+        case .ethereumTest: return "ETH Ropsten"
         case .ethereumClassic: return "ETC"
         case .callisto: return "CLO"
         case .poa: return "POA"

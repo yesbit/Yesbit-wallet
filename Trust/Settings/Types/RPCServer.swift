@@ -67,7 +67,8 @@ enum RPCServer {
 
     var symbol: String {
         switch self {
-        case .main, .test: return "ETH"
+        case .main: return "ETH"
+        case .test: return "ETH Ropsten"
         case .classic: return "ETC"
         case .callisto: return "CLO"
         case .poa: return "POA"
@@ -119,6 +120,7 @@ enum RPCServer {
     var openseaPath: String {
         switch self {
         case .main, .test, .classic, .poa, .callisto, .gochain: return Constants.dappsOpenSea
+//        case .main, .test, .poa, .callisto, .gochain: return Constants.dappsOpenSea
         }
     }
 

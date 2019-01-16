@@ -9,6 +9,9 @@ enum URLServiceProvider {
     case telegram
     case facebook
     case discord
+    case instagram
+    case medium
+    case reddit
     case helpCenter
     case sourceCode
     case privacyPolicy
@@ -22,6 +25,9 @@ enum URLServiceProvider {
         case .telegram: return "Telegram Group"
         case .facebook: return "Facebook"
         case .discord: return "Discord"
+        case .instagram: return "Instagram"
+        case .medium: return "Medium"
+        case .reddit: return "Reddit"
         case .helpCenter: return R.string.localizable.settingsHelpCenterTitle()
         case .sourceCode: return R.string.localizable.settingsSourceCodeButtonTitle()
         case .privacyPolicy: return R.string.localizable.settingsPrivacyTitle()
@@ -40,6 +46,14 @@ enum URLServiceProvider {
         case .facebook:
             return URL(string: "fb://profile?id=\(Constants.facebookUsername)")
         case .discord: return nil
+        case .instagram:
+            return URL(string: "instagram://media?id=\(Constants.instagramUsername)")
+        case .medium:
+            return nil
+//            return URL(string: "")
+        case .reddit:
+            return nil
+//            return URL(string: "")
         case .helpCenter: return nil
         case .sourceCode: return nil
         case .privacyPolicy: return nil
@@ -63,6 +77,12 @@ enum URLServiceProvider {
             return "https://www.facebook.com/\(Constants.facebookUsername)"
         case .discord:
             return "https://discord.gg/ahPWeHk"
+        case .instagram:
+            return "https://www.instagram.com/linkcoin.pro/"
+        case .medium:
+            return "https://medium.com/@LinkCoin"
+        case .reddit:
+            return "https://www.reddit.com/r/LinkcoinLKN/"
         case .helpCenter:
             return "https://help.trustwalletapp.com"
         case .sourceCode:
@@ -84,6 +104,9 @@ enum URLServiceProvider {
         case .telegram: return R.image.settings_colorful_telegram()
         case .facebook: return R.image.settings_colorful_facebook()
         case .discord: return R.image.settings_colorful_discord()
+        case .instagram: return nil
+        case .medium: return nil
+        case .reddit: return nil
         case .helpCenter: return R.image.settings_colorful_help_center()
         case .sourceCode: return nil
         case .privacyPolicy: return nil
