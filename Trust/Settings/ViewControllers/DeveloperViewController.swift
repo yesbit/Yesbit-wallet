@@ -48,7 +48,6 @@ struct DeveloperViewModel {
 protocol DeveloperViewControllerDelegate: class {
     func didClearTransactions(in controller: DeveloperViewController)
     func didClearTokens(in controller: DeveloperViewController)
-    func didSelect(server: RPCServer, in controller: DeveloperViewController)
 }
 
 final class DeveloperViewController: FormViewController {
