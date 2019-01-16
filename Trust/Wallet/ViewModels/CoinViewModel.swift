@@ -15,6 +15,7 @@ struct CoinViewModel {
         switch coin {
         case .bitcoin: return "Bitcoin"
         case .ethereum: return "Ethereum"
+        case .ethereumTest: return "Ethereum Ropsten"
         case .ethereumClassic: return "Ethereum Classic"
         case .poa: return "POA Network"
         case .callisto: return "Callisto"
@@ -25,6 +26,7 @@ struct CoinViewModel {
     var symbol: String {
         switch coin {
         case .ethereum: return "ETH"
+        case .ethereumTest: return "ETH"
         case .ethereumClassic: return "ETC"
         case .callisto: return "CLO"
         case .poa: return "POA"
@@ -36,7 +38,7 @@ struct CoinViewModel {
     var image: UIImage? {
         switch coin {
         case .bitcoin: return .none
-        case .ethereum: return R.image.ethereum_1()
+        case .ethereum, .ethereumTest: return R.image.ethereum_1()
         case .ethereumClassic: return R.image.ethereum61()
         case .poa: return R.image.ethereum99()
         case .callisto: return R.image.ethereum820()

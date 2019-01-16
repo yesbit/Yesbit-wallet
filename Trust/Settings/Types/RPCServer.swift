@@ -47,7 +47,6 @@ enum RPCServer {
         switch self {
         case .main: return false
         case .test, .poa, .classic, .callisto, .gochain: return true
-//        case .test: return true
         }
     }
 
@@ -120,7 +119,6 @@ enum RPCServer {
     var openseaPath: String {
         switch self {
         case .main, .test, .classic, .poa, .callisto, .gochain: return Constants.dappsOpenSea
-//        case .main, .test: return Constants.dappsOpenSea
         }
     }
 

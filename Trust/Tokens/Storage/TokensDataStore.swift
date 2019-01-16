@@ -251,14 +251,11 @@ extension Coin {
         switch self {
         case .bitcoin: return RPCServer.main //TODO
         case .ethereum: return RPCServer.main
+        case .ethereumTest: return RPCServer.test
         case .ethereumClassic: return RPCServer.classic
         case .gochain: return RPCServer.gochain
         case .callisto: return RPCServer.callisto
         case .poa: return RPCServer.poa
-//        case .ethereumClassic: return nil
-//        case .gochain: return nil
-//        case .callisto: return nil
-//        case .poa: return nil
         }
     }
 }
