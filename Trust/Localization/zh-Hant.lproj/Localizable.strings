@@ -57,7 +57,7 @@
 "settings.donate.button.title" = "捐贈";
 "settings.emailUs.button.title" = "郵件聯繫我們";
 "settings.error.failedToSendEmail" = "無法發送郵件。請確保你已經安裝了郵件應用。";
-"settings.feedback.email.title" = "Trust 反饋";
+"settings.feedback.email.title" = "Yesbit-wallet 反饋";
 "settings.navigation.title" = "設置";
 "settings.network.button.title" = "網絡";
 "settings.openSourceDevelopment.label.title" = "開源式開發";

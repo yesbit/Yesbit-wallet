@@ -56,7 +56,7 @@
 "settings.donate.button.title" = "Donate";
 "settings.emailUs.button.title" = "Email Us";
 "settings.error.failedToSendEmail" = "Failed to send email. Make sure you have Mail app installed.";
-"settings.feedback.email.title" = "Trust Feedback";
+"settings.feedback.email.title" = "Yesbit-wallet Feedback";
 "settings.navigation.title" = "Settings";
 "settings.network.button.title" = "Network";
 "settings.openSourceDevelopment.label.title" = "Open Source Development";
@@ -125,7 +125,7 @@
 "transaction.cell.unknown.title" = "Unknown";
 "welldone.description.label.text" = "Help us grow by sharing this app with your friends!";
 "welldone.navigation.title" = "Thank you!";
-"welldone.viewmodel.sharing.text1" = "Here is the app I use to store my ETH and ERC20 tokens.";
+"welldone.viewmodel.sharing.text1" = "Come and check out this peer-to-peer financial derivative trading platform.";
 "welldone.viewmodel.sharing.text2" = "Check out Trust - the wallet that lets me securely store my Ethereum and ERC20 tokens.";
 "welldone.viewmodel.sharing.text3" = "I securely store Ethereum and ERC20 tokens in the Trust wallet";
 "welldone.viewmodel.sharing.text4" = "I secure my Ethereum and ERC20 tokens in the Trust wallet.";

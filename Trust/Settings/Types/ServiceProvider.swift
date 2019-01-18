@@ -18,6 +18,7 @@ enum URLServiceProvider {
     case termsOfService
     case infura
     case dappsOpenSea
+    case trustWallet
 
     var title: String {
         switch self {
@@ -34,6 +35,7 @@ enum URLServiceProvider {
         case .termsOfService: return R.string.localizable.settingsTermsOfServiceButtonTitle()
         case .infura: return R.string.localizable.infura()
         case .dappsOpenSea: return R.string.localizable.openSea()
+        case .trustWallet: return "Trust Wallet"
         }
     }
 
@@ -60,6 +62,7 @@ enum URLServiceProvider {
         case .termsOfService: return nil
         case .infura: return nil
         case .dappsOpenSea: return nil
+        case .trustWallet: return nil
         }
     }
 
@@ -84,9 +87,9 @@ enum URLServiceProvider {
         case .reddit:
             return "https://www.reddit.com/r/LinkcoinLKN/"
         case .helpCenter:
-            return "https://help.trustwalletapp.com"
+            return "http://yesbit.io/#contact"
         case .sourceCode:
-            return "https://github.com/TrustWallet/trust-wallet-ios"
+            return "https://github.com/yesbit/trust-wallet-ios"
         case .privacyPolicy:
             return "https://trustwalletapp.com/privacy-policy.html"
         case .termsOfService:
@@ -95,6 +98,8 @@ enum URLServiceProvider {
             return "https://infura.io/"
         case .dappsOpenSea:
             return "https://opensea.io"
+        case .trustWallet:
+            return "https://trustwalletapp.com"
         }
     }
 
@@ -113,6 +118,7 @@ enum URLServiceProvider {
         case .termsOfService: return nil
         case .infura: return nil
         case .dappsOpenSea: return nil
+        case .trustWallet: return nil
         }
     }
 

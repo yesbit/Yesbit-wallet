@@ -28,11 +28,11 @@ final class AboutViewController: FormViewController {
 
             <<< linkProvider(type: .sourceCode)
 
-            +++ Section()
-
-            <<< linkProvider(type: .privacyPolicy)
-            <<< linkProvider(type: .termsOfService)
-
+//            +++ Section()
+//
+//            <<< linkProvider(type: .privacyPolicy)
+//            <<< linkProvider(type: .termsOfService)
+//
             +++ Section()
 
             <<< AppFormAppearance.button { button in
@@ -57,6 +57,7 @@ final class AboutViewController: FormViewController {
 
             <<< linkProvider(type: .infura)
             <<< linkProvider(type: .dappsOpenSea)
+            <<< linkProvider(type: .trustWallet)
     }
 
     private func linkProvider(
@@ -93,7 +94,7 @@ final class AboutViewController: FormViewController {
         Helpful information to developers:
         iOS Version: \(UIDevice.current.systemVersion)
         Device Model: \(UIDevice.current.model)
-        Trust Version: \(Bundle.main.fullVersion)
+        Yesbit-wallet Version: \(Bundle.main.fullVersion)
         Current locale: \(Locale.preferredLanguages.first ?? "")
         """
     }

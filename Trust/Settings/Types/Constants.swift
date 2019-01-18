@@ -7,7 +7,7 @@ public struct Constants {
     public static let keychainTestsKeyPrefix = "trustwallet-tests"
 
     // social
-    public static let website = "https://trustwalletapp.com"
+    public static let website = "https://yesbit.pro"
     public static let twitterUsername = "YesBit_Canada"
     public static let defaultTelegramUsername = "trustwallet"
     public static let facebookUsername = "Yesbit-Technology-Ltd-732552440442423"
@@ -17,7 +17,7 @@ public struct Constants {
     public static var localizedTelegramUsernames = ["ru": "trustwallet_ru", "vi": "trustwallet_vn", "es": "trustwallet_es", "zh": "trustwallet_cn", "ja": "trustwallet_jp", "de": "trustwallet_de", "fr": "trustwallet_fr"]
 
     // support
-    public static let supportEmail = "support@trustwalletapp.com"
+    public static let supportEmail = "admin@yesbit.ca"
 
     public static let dappsBrowserURL = "https://yesbit.pro"
     public static let dappsOpenSea = "https://opensea.io"
