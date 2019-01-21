@@ -2,7 +2,7 @@ platform :ios, '10.0'
 inhibit_all_warnings!
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'Trust' do
+target 'Yesbit' do
   use_frameworks!
 
   pod 'BigInt', '~> 3.0'
@@ -15,7 +15,7 @@ target 'Trust' do
   pod 'StatefulViewController'
   pod 'QRCodeReaderViewController', :git=>'https://github.com/yannickl/QRCodeReaderViewController.git', :branch=>'master'
   pod 'KeychainSwift'
-  pod 'SwiftLint'
+  pod 'SwiftLint', '~> 0.21.0'
   pod 'SeedStackViewController'
   pod 'RealmSwift'
   pod 'Moya', '~> 10.0.1'
@@ -30,12 +30,12 @@ target 'Trust' do
   pod 'URLNavigator'
   pod 'TrustWalletSDK', :git=>'https://github.com/TrustWallet/TrustSDK-iOS', :branch=>'master'
 
-  target 'TrustTests' do
+  target 'YesbitTests' do
     inherit! :search_paths
     # Pods for testing
   end
 
-  target 'TrustUITests' do
+  target 'YesbitUITests' do
     inherit! :search_paths
     # Pods for testing
   end
