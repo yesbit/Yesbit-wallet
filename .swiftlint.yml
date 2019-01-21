@@ -19,10 +19,10 @@ opt_in_rules:
   - multiline_parameters
   - vertical_parameter_alignment_on_call
 included:
-  - Trust
+  - Yesbit
 excluded:
-  - Trust/Vendors
-  - Trust/R.generated.swift
+  - Yesbit/Vendors
+  - Yesbit/R.generated.swift
 function_parameter_count:
   warning: 20
   error: 25
