@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1D2831CD94641E5166E3A798 /* Pods_TrustUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AEE09E815DB68F6634F89AA /* Pods_TrustUITests.framework */; };
+		23522644E85D8FA8C7BC3EC7 /* Pods_YesbitUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D3AD60655AF2C2EE75ABE21 /* Pods_YesbitUITests.framework */; };
 		290B2B541F8F50030053C83E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 290B2B561F8F50030053C83E /* Localizable.strings */; };
 		290B2B5F1F9177860053C83E /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B2B5E1F9177860053C83E /* UIImage.swift */; };
 		290B2B651F91A4880053C83E /* ButtonsFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290B2B641F91A4880053C83E /* ButtonsFooterView.swift */; };
@@ -235,10 +236,10 @@
 		29FF130A1F75F67200AFD326 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF13091F75F67200AFD326 /* Address.swift */; };
 		29FF130D1F7626E800AFD326 /* FakeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF130C1F7626E800AFD326 /* FakeNavigationController.swift */; };
 		29FF6D6B2011D2AF00A3011C /* InCoordinatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF6D6A2011D2AF00A3011C /* InCoordinatorError.swift */; };
-		3CDDD1E2CD1B0180754B7992 /* Pods_Trust.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 646C8C822C986358D7388602 /* Pods_Trust.framework */; };
 		4E9A9D0820B2C52500180054 /* CoinTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9A9D0720B2C52500180054 /* CoinTicker.swift */; };
 		4EEE540D207996EF007D300D /* TokensDataStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE540C207996EF007D300D /* TokensDataStoreTest.swift */; };
 		4EEE540F20799701007D300D /* CoinTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE540E20799700007D300D /* CoinTicker.swift */; };
+		506CA58A7201C838CC74C466 /* Pods_YesbitTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B525D4646EB3905AE514993 /* Pods_YesbitTests.framework */; };
 		613D048B1FDE162B008DE72E /* TrustProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 613D048A1FDE162B008DE72E /* TrustProvider.swift */; };
 		615F10561FCBEF2E008A45AF /* OnboardingPageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615F10551FCBEF2E008A45AF /* OnboardingPageViewModel.swift */; };
 		615F10591FCBEF7C008A45AF /* OnboardingPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 615F10581FCBEF7C008A45AF /* OnboardingPage.swift */; };
@@ -434,6 +435,7 @@
 		903682F6204A71B000013479 /* Bookmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903682F5204A71B000013479 /* Bookmark.swift */; };
 		903682F8204AC52F00013479 /* BookmarksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 903682F7204AC52F00013479 /* BookmarksViewModel.swift */; };
 		90DDF48520518AE50016E6D4 /* BookmarkViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DDF48420518AE50016E6D4 /* BookmarkViewModel.swift */; };
+		A0563B045BAFCC9F443DA193 /* Pods_Yesbit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C41219F5B7AAF0B92B4D1F39 /* Pods_Yesbit.framework */; };
 		A207B8212080779200A0CD89 /* UIActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A207B8202080779200A0CD89 /* UIActivityViewController.swift */; };
 		A2B7ECAA2038122200828E7D /* ExportPrivateKeyCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B7ECA92038122200828E7D /* ExportPrivateKeyCoordinator.swift */; };
 		A2B7ECAC2038FFBC00828E7D /* ExportPrivateKeyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B7ECAB2038FFBC00828E7D /* ExportPrivateKeyViewModel.swift */; };
@@ -497,14 +499,14 @@
 		290B2B6B1F92C35B0053C83E /* RPCServerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RPCServerTests.swift; sourceTree = "<group>"; };
 		290B2B6D1F92C3980053C83E /* UserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
 		290B2B6F1F930AB90053C83E /* PushNotificationsRegistrar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationsRegistrar.swift; sourceTree = "<group>"; };
-		2912CCF51F6A830700C6CBE3 /* Trust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Trust.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2912CCF51F6A830700C6CBE3 /* Yesbit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yesbit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2912CCF81F6A830700C6CBE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2912CD011F6A830700C6CBE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2912CD061F6A830700C6CBE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2912CD0B1F6A830700C6CBE3 /* TrustTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrustTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2912CD0B1F6A830700C6CBE3 /* YesbitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YesbitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2912CD0F1F6A830700C6CBE3 /* TrustTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustTests.swift; sourceTree = "<group>"; };
 		2912CD111F6A830700C6CBE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2912CD161F6A830700C6CBE3 /* TrustUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrustUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2912CD161F6A830700C6CBE3 /* YesbitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YesbitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2912CD1A1F6A830700C6CBE3 /* TrustUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrustUITests.swift; sourceTree = "<group>"; };
 		2912CD1C1F6A830700C6CBE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2912CD2E1F6A83A100C6CBE3 /* ImportWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportWalletViewController.swift; sourceTree = "<group>"; };
@@ -635,7 +637,7 @@
 		29AD3D5820F5BD97007893C9 /* WalletsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsCoordinator.swift; sourceTree = "<group>"; };
 		29AD8A031F93D6CD008E10E7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		29AD8A051F93DC8C008E10E7 /* PushDevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushDevice.swift; sourceTree = "<group>"; };
-		29AD8A071F93E1F0008E10E7 /* Trust.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Trust.entitlements; sourceTree = "<group>"; };
+		29AD8A071F93E1F0008E10E7 /* Yesbit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Yesbit.entitlements; sourceTree = "<group>"; };
 		29AD8A081F93F8B2008E10E7 /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		29AD8A0B1F93FBBF008E10E7 /* Subscribable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscribable.swift; sourceTree = "<group>"; };
 		29AD8A0D1F93FF28008E10E7 /* WalletSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletSession.swift; sourceTree = "<group>"; };
@@ -745,6 +747,7 @@
 		61FC5ECE1FCFBAE500CCB12A /* EtherNumberFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherNumberFormatter.swift; sourceTree = "<group>"; };
 		61FC5ED01FCFBDEB00CCB12A /* EtherNumberFormatterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EtherNumberFormatterTests.swift; sourceTree = "<group>"; };
 		646C8C822C986358D7388602 /* Pods_Trust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Trust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65EBB070B65EA158F67AF041 /* Pods-YesbitTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YesbitTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YesbitTests/Pods-YesbitTests.debug.xcconfig"; sourceTree = "<group>"; };
 		664D11A02007D59F0041A0B0 /* EstimateGasRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EstimateGasRequest.swift; sourceTree = "<group>"; };
 		71A4336F2113860900985ADC /* ConfirmPaymentDetailsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPaymentDetailsViewModelTests.swift; sourceTree = "<group>"; };
 		71B1B5302114570A00EF23E5 /* LockEnterPasscodeViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LockEnterPasscodeViewControllerTests.swift; sourceTree = "<group>"; };
@@ -928,7 +931,11 @@
 		77EAD89120EAC0B800D14AA2 /* WalletStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletStorage.swift; sourceTree = "<group>"; };
 		77EAD89420EAF19F00D14AA2 /* WalletInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletInfo.swift; sourceTree = "<group>"; };
 		77EAD89620EAF1FD00D14AA2 /* WalletObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletObject.swift; sourceTree = "<group>"; };
+		7D3AD60655AF2C2EE75ABE21 /* Pods_YesbitUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YesbitUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EE9E56591ED48EEE74A9D0E /* Pods-Yesbit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yesbit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Yesbit/Pods-Yesbit.debug.xcconfig"; sourceTree = "<group>"; };
+		840F7B38B27460C6AF215DB2 /* Pods-Yesbit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Yesbit.release.xcconfig"; path = "Pods/Target Support Files/Pods-Yesbit/Pods-Yesbit.release.xcconfig"; sourceTree = "<group>"; };
 		87FA1153388F27F599C430B8 /* Pods-TrustTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrustTests/Pods-TrustTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8B525D4646EB3905AE514993 /* Pods_YesbitTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YesbitTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		902CAB582051818A00F96FFE /* BookmarkViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookmarkViewCell.xib; sourceTree = "<group>"; };
 		902CAB5A2051835E00F96FFE /* BookmarkViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewCell.swift; sourceTree = "<group>"; };
 		903682F0204A6DB800013479 /* BookmarkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewController.swift; sourceTree = "<group>"; };
@@ -936,6 +943,7 @@
 		903682F5204A71B000013479 /* Bookmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bookmark.swift; sourceTree = "<group>"; };
 		903682F7204AC52F00013479 /* BookmarksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewModel.swift; sourceTree = "<group>"; };
 		90DDF48420518AE50016E6D4 /* BookmarkViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkViewModel.swift; sourceTree = "<group>"; };
+		917ADD14E0CC702C4F7A25F7 /* Pods-YesbitUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YesbitUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YesbitUITests/Pods-YesbitUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		A207B8202080779200A0CD89 /* UIActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIActivityViewController.swift; sourceTree = "<group>"; };
 		A2B7ECA92038122200828E7D /* ExportPrivateKeyCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportPrivateKeyCoordinator.swift; sourceTree = "<group>"; };
 		A2B7ECAB2038FFBC00828E7D /* ExportPrivateKeyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExportPrivateKeyViewModel.swift; sourceTree = "<group>"; };
@@ -966,12 +974,15 @@
 		BBB61E112050993A00428BBD /* BrowserErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserErrorView.swift; sourceTree = "<group>"; };
 		BBD4E415205654E4005545E9 /* EthTypedData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EthTypedData.swift; sourceTree = "<group>"; };
 		BBF4F9B62029D0B2009E04C0 /* GasViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GasViewModel.swift; sourceTree = "<group>"; };
+		C41219F5B7AAF0B92B4D1F39 /* Pods_Yesbit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Yesbit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CCA4FE321FD3655900749AE4 /* CheckDeviceCoordinatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckDeviceCoordinatorTests.swift; sourceTree = "<group>"; };
 		CCA4FE351FD4282400749AE4 /* DeviceChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceChecker.swift; sourceTree = "<group>"; };
 		CCA4FE371FD428B300749AE4 /* JailbreakChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JailbreakChecker.swift; sourceTree = "<group>"; };
 		CCA4FE391FD42B4100749AE4 /* FakeJailbreakChecker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FakeJailbreakChecker.swift; sourceTree = "<group>"; };
 		CCCD74FC1FD2D38D004A087D /* CheckDeviceCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckDeviceCoordinator.swift; sourceTree = "<group>"; };
 		DDF643F2D99BCE8E6139C057 /* Pods-TrustTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrustTests/Pods-TrustTests.release.xcconfig"; sourceTree = "<group>"; };
+		EA8D9D0D7B98AF94C3C0C10F /* Pods-YesbitTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YesbitTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YesbitTests/Pods-YesbitTests.release.xcconfig"; sourceTree = "<group>"; };
+		FE7D44188D536C9A9934F6B4 /* Pods-YesbitUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YesbitUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-YesbitUITests/Pods-YesbitUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -979,7 +990,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CDDD1E2CD1B0180754B7992 /* Pods_Trust.framework in Frameworks */,
+				A0563B045BAFCC9F443DA193 /* Pods_Yesbit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -988,6 +999,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9F052FDC5B72E024DD05F0D /* Pods_TrustTests.framework in Frameworks */,
+				506CA58A7201C838CC74C466 /* Pods_YesbitTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -996,6 +1008,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D2831CD94641E5166E3A798 /* Pods_TrustUITests.framework in Frameworks */,
+				23522644E85D8FA8C7BC3EC7 /* Pods_YesbitUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1023,9 +1036,9 @@
 		2912CCEC1F6A830700C6CBE3 = {
 			isa = PBXGroup;
 			children = (
-				2912CCF71F6A830700C6CBE3 /* Trust */,
-				2912CD0E1F6A830700C6CBE3 /* TrustTests */,
-				2912CD191F6A830700C6CBE3 /* TrustUITests */,
+				2912CCF71F6A830700C6CBE3 /* Yesbit */,
+				2912CD0E1F6A830700C6CBE3 /* YesbitTests */,
+				2912CD191F6A830700C6CBE3 /* YesbitUITests */,
 				2912CCF61F6A830700C6CBE3 /* Products */,
 				9A0F00B2D545197C8F7691C2 /* Pods */,
 				FAD3F374A5C639BD900944DB /* Frameworks */,
@@ -1035,14 +1048,14 @@
 		2912CCF61F6A830700C6CBE3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2912CCF51F6A830700C6CBE3 /* Trust.app */,
-				2912CD0B1F6A830700C6CBE3 /* TrustTests.xctest */,
-				2912CD161F6A830700C6CBE3 /* TrustUITests.xctest */,
+				2912CCF51F6A830700C6CBE3 /* Yesbit.app */,
+				2912CD0B1F6A830700C6CBE3 /* YesbitTests.xctest */,
+				2912CD161F6A830700C6CBE3 /* YesbitUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2912CCF71F6A830700C6CBE3 /* Trust */ = {
+		2912CCF71F6A830700C6CBE3 /* Yesbit */ = {
 			isa = PBXGroup;
 			children = (
 				73ACEEF620163B4E003DD71D /* Lock */,
@@ -1069,13 +1082,13 @@
 				29850D241F6B27A800791A49 /* R.generated.swift */,
 				2912CD011F6A830700C6CBE3 /* Assets.xcassets */,
 				2912CD061F6A830700C6CBE3 /* Info.plist */,
-				29AD8A071F93E1F0008E10E7 /* Trust.entitlements */,
+				29AD8A071F93E1F0008E10E7 /* Yesbit.entitlements */,
 				296106CD1F777E410006164B /* LaunchScreen.storyboard */,
 			);
-			path = Trust;
+			path = Yesbit;
 			sourceTree = "<group>";
 		};
-		2912CD0E1F6A830700C6CBE3 /* TrustTests */ = {
+		2912CD0E1F6A830700C6CBE3 /* YesbitTests */ = {
 			isa = PBXGroup;
 			children = (
 				772C6DBC210A8B8100FCE4F1 /* Lock */,
@@ -1096,10 +1109,10 @@
 				2912CD0F1F6A830700C6CBE3 /* TrustTests.swift */,
 				2912CD111F6A830700C6CBE3 /* Info.plist */,
 			);
-			path = TrustTests;
+			path = YesbitTests;
 			sourceTree = "<group>";
 		};
-		2912CD191F6A830700C6CBE3 /* TrustUITests */ = {
+		2912CD191F6A830700C6CBE3 /* YesbitUITests */ = {
 			isa = PBXGroup;
 			children = (
 				29AD3D4E20F2CEEE007893C9 /* SnapshotHelper.swift */,
@@ -1107,7 +1120,7 @@
 				2912CD1C1F6A830700C6CBE3 /* Info.plist */,
 				29358D9E1F78D5B700925D61 /* Screenshots.swift */,
 			);
-			path = TrustUITests;
+			path = YesbitUITests;
 			sourceTree = "<group>";
 		};
 		2912CD281F6A831700C6CBE3 /* Wallet */ = {
@@ -2440,6 +2453,12 @@
 				DDF643F2D99BCE8E6139C057 /* Pods-TrustTests.release.xcconfig */,
 				477899BEAA4489DA423E8857 /* Pods-TrustUITests.debug.xcconfig */,
 				A3B747245A27436E621E7E41 /* Pods-TrustUITests.release.xcconfig */,
+				7EE9E56591ED48EEE74A9D0E /* Pods-Yesbit.debug.xcconfig */,
+				840F7B38B27460C6AF215DB2 /* Pods-Yesbit.release.xcconfig */,
+				65EBB070B65EA158F67AF041 /* Pods-YesbitTests.debug.xcconfig */,
+				EA8D9D0D7B98AF94C3C0C10F /* Pods-YesbitTests.release.xcconfig */,
+				917ADD14E0CC702C4F7A25F7 /* Pods-YesbitUITests.debug.xcconfig */,
+				FE7D44188D536C9A9934F6B4 /* Pods-YesbitUITests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -2518,6 +2537,9 @@
 				A48A17FC2CC895AF2BB871D0 /* Pods_TrustTests.framework */,
 				0AEE09E815DB68F6634F89AA /* Pods_TrustUITests.framework */,
 				486727FADFF5D4F43B985920 /* Pods_OpenInTrust.framework */,
+				C41219F5B7AAF0B92B4D1F39 /* Pods_Yesbit.framework */,
+				8B525D4646EB3905AE514993 /* Pods_YesbitTests.framework */,
+				7D3AD60655AF2C2EE75ABE21 /* Pods_YesbitUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -2525,9 +2547,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2912CCF41F6A830700C6CBE3 /* Trust */ = {
+		2912CCF41F6A830700C6CBE3 /* Yesbit */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2912CD1F1F6A830700C6CBE3 /* Build configuration list for PBXNativeTarget "Trust" */;
+			buildConfigurationList = 2912CD1F1F6A830700C6CBE3 /* Build configuration list for PBXNativeTarget "Yesbit" */;
 			buildPhases = (
 				F48CC1C9F6D4FAE6EF587C03 /* [CP] Check Pods Manifest.lock */,
 				29336FE81F6B24FF005E3BFC /* R.Swift */,
@@ -2542,14 +2564,14 @@
 			);
 			dependencies = (
 			);
-			name = Trust;
+			name = Yesbit;
 			productName = etherwallet;
-			productReference = 2912CCF51F6A830700C6CBE3 /* Trust.app */;
+			productReference = 2912CCF51F6A830700C6CBE3 /* Yesbit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2912CD0A1F6A830700C6CBE3 /* TrustTests */ = {
+		2912CD0A1F6A830700C6CBE3 /* YesbitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2912CD221F6A830700C6CBE3 /* Build configuration list for PBXNativeTarget "TrustTests" */;
+			buildConfigurationList = 2912CD221F6A830700C6CBE3 /* Build configuration list for PBXNativeTarget "YesbitTests" */;
 			buildPhases = (
 				558B94C30BF51EDC00493AF8 /* [CP] Check Pods Manifest.lock */,
 				2912CD071F6A830700C6CBE3 /* Sources */,
@@ -2561,14 +2583,14 @@
 			dependencies = (
 				2912CD0D1F6A830700C6CBE3 /* PBXTargetDependency */,
 			);
-			name = TrustTests;
+			name = YesbitTests;
 			productName = etherwalletTests;
-			productReference = 2912CD0B1F6A830700C6CBE3 /* TrustTests.xctest */;
+			productReference = 2912CD0B1F6A830700C6CBE3 /* YesbitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		2912CD151F6A830700C6CBE3 /* TrustUITests */ = {
+		2912CD151F6A830700C6CBE3 /* YesbitUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2912CD251F6A830700C6CBE3 /* Build configuration list for PBXNativeTarget "TrustUITests" */;
+			buildConfigurationList = 2912CD251F6A830700C6CBE3 /* Build configuration list for PBXNativeTarget "YesbitUITests" */;
 			buildPhases = (
 				EB2D49CBEF37022D8861D8E0 /* [CP] Check Pods Manifest.lock */,
 				2912CD121F6A830700C6CBE3 /* Sources */,
@@ -2580,9 +2602,9 @@
 			dependencies = (
 				2912CD181F6A830700C6CBE3 /* PBXTargetDependency */,
 			);
-			name = TrustUITests;
+			name = YesbitUITests;
 			productName = etherwalletUITests;
-			productReference = 2912CD161F6A830700C6CBE3 /* TrustUITests.xctest */;
+			productReference = 2912CD161F6A830700C6CBE3 /* YesbitUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -2628,7 +2650,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2912CCF01F6A830700C6CBE3 /* Build configuration list for PBXProject "Trust" */;
+			buildConfigurationList = 2912CCF01F6A830700C6CBE3 /* Build configuration list for PBXProject "Yesbit" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -2651,9 +2673,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2912CCF41F6A830700C6CBE3 /* Trust */,
-				2912CD0A1F6A830700C6CBE3 /* TrustTests */,
-				2912CD151F6A830700C6CBE3 /* TrustUITests */,
+				2912CCF41F6A830700C6CBE3 /* Yesbit */,
+				2912CD0A1F6A830700C6CBE3 /* YesbitTests */,
+				2912CD151F6A830700C6CBE3 /* YesbitUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -2700,7 +2722,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Trust/Pods-Trust-resources.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Yesbit/Pods-Yesbit-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/TrustWeb3Provider/TrustWeb3Provider.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
@@ -2709,7 +2731,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trust/Pods-Trust-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yesbit/Pods-Yesbit-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		29282B511F7629DB0067F88D /* Run SwiftLint */ = {
@@ -2738,7 +2760,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Trust\"\n";
+			shellScript = "\"$PODS_ROOT/R.swift/rswift\" generate \"$SRCROOT/Yesbit\"\n";
 		};
 		558B94C30BF51EDC00493AF8 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -2751,7 +2773,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TrustTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-YesbitTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2769,7 +2791,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-TrustUITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-YesbitUITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -2782,7 +2804,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-Trust/Pods-Trust-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-Yesbit/Pods-Yesbit-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/APIKit/APIKit.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
@@ -2841,7 +2863,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Trust/Pods-Trust-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Yesbit/Pods-Yesbit-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F48CC1C9F6D4FAE6EF587C03 /* [CP] Check Pods Manifest.lock */ = {
@@ -2855,7 +2877,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Trust-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-Yesbit-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -3339,12 +3361,12 @@
 /* Begin PBXTargetDependency section */
 		2912CD0D1F6A830700C6CBE3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2912CCF41F6A830700C6CBE3 /* Trust */;
+			target = 2912CCF41F6A830700C6CBE3 /* Yesbit */;
 			targetProxy = 2912CD0C1F6A830700C6CBE3 /* PBXContainerItemProxy */;
 		};
 		2912CD181F6A830700C6CBE3 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2912CCF41F6A830700C6CBE3 /* Trust */;
+			target = 2912CCF41F6A830700C6CBE3 /* Yesbit */;
 			targetProxy = 2912CD171F6A830700C6CBE3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -3490,12 +3512,12 @@
 		};
 		2912CD201F6A830700C6CBE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4DB8204016307EAFC079EA48 /* Pods-Trust.debug.xcconfig */;
+			baseConfigurationReference = 7EE9E56591ED48EEE74A9D0E /* Pods-Yesbit.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
-				CODE_SIGN_ENTITLEMENTS = Trust/Trust.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Yesbit/Yesbit.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -3504,7 +3526,7 @@
 				ENABLE_BITCODE = YES;
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
-				INFOPLIST_FILE = Trust/Info.plist;
+				INFOPLIST_FILE = Yesbit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yesbit.trustwalletios;
@@ -3519,12 +3541,12 @@
 		};
 		2912CD211F6A830700C6CBE3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = B13A87D3BA5167741E5D0801 /* Pods-Trust.release.xcconfig */;
+			baseConfigurationReference = 840F7B38B27460C6AF215DB2 /* Pods-Yesbit.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = NO;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = NO;
-				CODE_SIGN_ENTITLEMENTS = Trust/Trust.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Yesbit/Yesbit.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
@@ -3533,7 +3555,7 @@
 				ENABLE_BITCODE = YES;
 				GCC_WARN_UNUSED_LABEL = YES;
 				GCC_WARN_UNUSED_PARAMETER = YES;
-				INFOPLIST_FILE = Trust/Info.plist;
+				INFOPLIST_FILE = Yesbit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yesbit.trustwalletios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -3546,7 +3568,7 @@
 		};
 		2912CD231F6A830700C6CBE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 87FA1153388F27F599C430B8 /* Pods-TrustTests.debug.xcconfig */;
+			baseConfigurationReference = 65EBB070B65EA158F67AF041 /* Pods-YesbitTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -3559,13 +3581,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trust.app/Trust";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yesbit.app/Yesbit";
 			};
 			name = Debug;
 		};
 		2912CD241F6A830700C6CBE3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DDF643F2D99BCE8E6139C057 /* Pods-TrustTests.release.xcconfig */;
+			baseConfigurationReference = EA8D9D0D7B98AF94C3C0C10F /* Pods-YesbitTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -3577,13 +3599,13 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Trust.app/Trust";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Yesbit.app/Yesbit";
 			};
 			name = Release;
 		};
 		2912CD261F6A830700C6CBE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 477899BEAA4489DA423E8857 /* Pods-TrustUITests.debug.xcconfig */;
+			baseConfigurationReference = 917ADD14E0CC702C4F7A25F7 /* Pods-YesbitUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -3599,7 +3621,7 @@
 		};
 		2912CD271F6A830700C6CBE3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3B747245A27436E621E7E41 /* Pods-TrustUITests.release.xcconfig */;
+			baseConfigurationReference = FE7D44188D536C9A9934F6B4 /* Pods-YesbitUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -3616,7 +3638,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2912CCF01F6A830700C6CBE3 /* Build configuration list for PBXProject "Trust" */ = {
+		2912CCF01F6A830700C6CBE3 /* Build configuration list for PBXProject "Yesbit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2912CD1D1F6A830700C6CBE3 /* Debug */,
@@ -3625,7 +3647,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2912CD1F1F6A830700C6CBE3 /* Build configuration list for PBXNativeTarget "Trust" */ = {
+		2912CD1F1F6A830700C6CBE3 /* Build configuration list for PBXNativeTarget "Yesbit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2912CD201F6A830700C6CBE3 /* Debug */,
@@ -3634,7 +3656,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2912CD221F6A830700C6CBE3 /* Build configuration list for PBXNativeTarget "TrustTests" */ = {
+		2912CD221F6A830700C6CBE3 /* Build configuration list for PBXNativeTarget "YesbitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2912CD231F6A830700C6CBE3 /* Debug */,
@@ -3643,7 +3665,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2912CD251F6A830700C6CBE3 /* Build configuration list for PBXNativeTarget "TrustUITests" */ = {
+		2912CD251F6A830700C6CBE3 /* Build configuration list for PBXNativeTarget "YesbitUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2912CD261F6A830700C6CBE3 /* Debug */,
