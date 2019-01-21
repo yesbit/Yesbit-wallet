@@ -15,9 +15,37 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2912CCF41F6A830700C6CBE3"
-               BuildableName = "Trust.app"
-               BlueprintName = "Trust"
-               ReferencedContainer = "container:Trust.xcodeproj">
+               BuildableName = "Yesbit.app"
+               BlueprintName = "Yesbit"
+               ReferencedContainer = "container:Yesbit.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2912CD0A1F6A830700C6CBE3"
+               BuildableName = "YesbitTests.xctest"
+               BlueprintName = "YesbitTests"
+               ReferencedContainer = "container:Yesbit.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "NO"
+            buildForProfiling = "NO"
+            buildForArchiving = "NO"
+            buildForAnalyzing = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "2912CD151F6A830700C6CBE3"
+               BuildableName = "YesbitUITests.xctest"
+               BlueprintName = "YesbitUITests"
+               ReferencedContainer = "container:Yesbit.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,34 +56,14 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2912CD0A1F6A830700C6CBE3"
-               BuildableName = "TrustTests.xctest"
-               BlueprintName = "TrustTests"
-               ReferencedContainer = "container:Trust.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
-         <TestableReference
-            skipped = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "2912CD151F6A830700C6CBE3"
-               BuildableName = "TrustUITests.xctest"
-               BlueprintName = "TrustUITests"
-               ReferencedContainer = "container:Trust.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2912CCF41F6A830700C6CBE3"
-            BuildableName = "Trust.app"
-            BlueprintName = "Trust"
-            ReferencedContainer = "container:Trust.xcodeproj">
+            BuildableName = "Yesbit.app"
+            BlueprintName = "Yesbit"
+            ReferencedContainer = "container:Yesbit.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +84,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2912CCF41F6A830700C6CBE3"
-            BuildableName = "Trust.app"
-            BlueprintName = "Trust"
-            ReferencedContainer = "container:Trust.xcodeproj">
+            BuildableName = "Yesbit.app"
+            BlueprintName = "Yesbit"
+            ReferencedContainer = "container:Yesbit.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -94,16 +102,15 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
+      <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2912CCF41F6A830700C6CBE3"
-            BuildableName = "Trust.app"
-            BlueprintName = "Trust"
-            ReferencedContainer = "container:Trust.xcodeproj">
+            BuildableName = "Yesbit.app"
+            BlueprintName = "Yesbit"
+            ReferencedContainer = "container:Yesbit.xcodeproj">
          </BuildableReference>
-      </BuildableProductRunnable>
+      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
