@@ -109,9 +109,9 @@ enum URLServiceProvider {
         case .telegram: return R.image.settings_colorful_telegram()
         case .facebook: return R.image.settings_colorful_facebook()
         case .discord: return R.image.settings_colorful_discord()
-        case .instagram: return nil
-        case .medium: return nil
-        case .reddit: return nil
+        case .instagram: return R.image.settings_colorful_instagram()
+        case .medium: return R.image.settings_colorful_medium()
+        case .reddit: return R.image.settings_colorful_reddit()
         case .helpCenter: return R.image.settings_colorful_help_center()
         case .sourceCode: return nil
         case .privacyPolicy: return nil
