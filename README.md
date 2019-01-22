@@ -15,6 +15,10 @@ Welcome to Trust's open source iOS app!
 1. [Download](https://developer.apple.com/xcode/download/) the Xcode 9 release.
 1. Clone this repository.
 1. Run `make bootstrap` to install tools and dependencies.
+1. Open Yesbit.xcworkspace
+1. Add `case ethereumTest = 1` in Pods/Pods/TrustCore/Coin.swift
+1. Run the project and fix any switch statement unexhaustive error
+Note: if there is error about not able to locate R.generated.swift, let me know
 
 ## Contributing
 
