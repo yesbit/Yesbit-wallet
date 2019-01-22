@@ -36,7 +36,7 @@ final class WelcomeViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.setTitle(NSLocalizedString("welcome.createWallet.button.title", value: "CREATE WALLET", comment: ""), for: .normal)
         button.titleLabel?.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.semibold)
-        button.backgroundColor = Colors.darkBlue
+        button.backgroundColor = Colors.yesbitOrange
         return button
     }()
     let importWalletButton: UIButton = {

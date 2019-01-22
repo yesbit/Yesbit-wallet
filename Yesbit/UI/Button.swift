@@ -28,7 +28,7 @@ enum ButtonStyle: Int {
 
     var backgroundColor: UIColor {
         switch self {
-        case .solid, .squared: return Colors.blue
+        case .solid, .squared: return Colors.yesbitOrange
         case .border, .borderless: return .white
         case .clear : return .clear
         }
@@ -36,8 +36,8 @@ enum ButtonStyle: Int {
 
     var backgroundColorHighlighted: UIColor {
         switch self {
-        case .solid, .squared: return Colors.blue
-        case .border: return Colors.blue
+        case .solid, .squared: return Colors.yesbitOrange
+        case .border: return Colors.yesbitOrange
         case .borderless: return .white
         case .clear: return .clear
         }
@@ -68,7 +68,7 @@ enum ButtonStyle: Int {
     var textColor: UIColor {
         switch self {
         case .solid, .squared: return .white
-        case .border, .borderless, .clear: return Colors.blue
+        case .border, .borderless, .clear: return Colors.yesbitOrange
         }
     }
 
@@ -76,13 +76,13 @@ enum ButtonStyle: Int {
         switch self {
         case .solid, .squared: return UIColor(white: 1, alpha: 0.8)
         case .border: return .white
-        case .borderless, .clear: return Colors.blue
+        case .borderless, .clear: return Colors.yesbitOrange
         }
     }
 
     var borderColor: UIColor {
         switch self {
-        case .solid, .squared, .border: return Colors.blue
+        case .solid, .squared, .border: return Colors.yesbitOrange
         case .borderless, .clear: return .clear
         }
     }

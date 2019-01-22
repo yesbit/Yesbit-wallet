@@ -17,17 +17,17 @@ func applyStyle() {
         .foregroundColor: UIColor.white,
     ]
 
-    UITextField.appearance().tintColor = Colors.blue
+    UITextField.appearance().tintColor = Colors.yesbitOrange
 
-    UIImageView.appearance().tintColor = Colors.lightBlue
+    UIImageView.appearance().tintColor = Colors.yesbitOrange
 
     BrowserNavigationBar.appearance().setBackgroundImage(.filled(with: .white), for: .default)
 }
 
 struct AppGlobalStyle {
     static let navigationBarTintColor = UIColor.white
-    static let docPickerNavigationBarTintColor = Colors.darkBlue
-    static let barTintColor = Colors.darkBlue
+    static let docPickerNavigationBarTintColor = Colors.yesbitOrange
+    static let barTintColor = Colors.yesbitOrange
 }
 
 struct StyleLayout {

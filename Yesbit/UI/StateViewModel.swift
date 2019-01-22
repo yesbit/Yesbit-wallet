@@ -6,7 +6,8 @@ import UIKit
 struct StateViewModel {
 
     var titleTextColor: UIColor {
-        return UIColor(hex: "438FCA")
+//        return UIColor(hex: "438FCA")
+        return Colors.yesbitOrange
     }
 
     var titleFont: UIFont {
@@ -14,7 +15,8 @@ struct StateViewModel {
     }
 
     var descriptionTextColor: UIColor {
-        return UIColor(hex: "69A5D5")
+//        return UIColor(hex: "69A5D5")
+        return Colors.yesbitOrange
     }
 
     var descriptionFont: UIFont {
