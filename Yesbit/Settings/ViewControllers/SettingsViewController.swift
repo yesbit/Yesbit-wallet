@@ -80,22 +80,22 @@ final class SettingsViewController: FormViewController, Coordinator {
 //            security section, TODO
 //            +++ Section(R.string.localizable.settingsSecurityLabelTitle())
 
-            <<< SwitchRow(Values.passcodeRow) { [weak self] in
-                $0.title = self?.viewModel.passcodeTitle
-                $0.value = self?.isPasscodeEnabled
-            }.onChange { [unowned self] row in
-                if row.value == true {
-                    self.setPasscode { result in
-                        row.value = result
-                        row.updateCell()
-                    }
-                } else {
-                    self.lock.deletePasscode()
-                    self.updateAutoLockRow(with: AutoLock.immediate)
-                }
-            }.cellSetup { cell, _ in
-                cell.imageView?.image = R.image.settings_colorful_security()
-            }
+//            <<< SwitchRow(Values.passcodeRow) { [weak self] in
+//                $0.title = self?.viewModel.passcodeTitle
+//                $0.value = self?.isPasscodeEnabled
+//            }.onChange { [unowned self] row in
+//                if row.value == true {
+//                    self.setPasscode { result in
+//                        row.value = result
+//                        row.updateCell()
+//                    }
+//                } else {
+//                    self.lock.deletePasscode()
+//                    self.updateAutoLockRow(with: AutoLock.immediate)
+//                }
+//            }.cellSetup { cell, _ in
+//                cell.imageView?.image = R.image.settings_colorful_security()
+//            }
 
 //            <<< autoLockRow
 //
