@@ -195,13 +195,13 @@ extension EditTokensViewController: UISearchBarDelegate {
 
 extension EditTokensViewController: UISearchControllerDelegate {
     func willPresentSearchController(_ searchController: UISearchController) {
-        searchController.searchBar.barTintColor = Colors.blue
+        searchController.searchBar.barTintColor = Colors.yesbitOrange
         searchController.searchBar.tintColor = .white
     }
 
     func willDismissSearchController(_ searchController: UISearchController) {
         searchController.searchBar.barTintColor = Colors.lightGray
-        searchController.searchBar.tintColor = Colors.blue
+        searchController.searchBar.tintColor = Colors.yesbitOrange
     }
 }
 

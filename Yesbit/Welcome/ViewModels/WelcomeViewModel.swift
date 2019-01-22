@@ -14,11 +14,13 @@ struct WelcomeViewModel {
     }
 
     var pageIndicatorTintColor: UIColor {
-        return UIColor(hex: "c3dbee")
+//        return UIColor(hex: "c3dbee")
+        return Colors.yesbitOrange
     }
 
     var currentPageIndicatorTintColor: UIColor {
-        return UIColor(hex: "438FCA")
+//        return UIColor(hex: "438FCA")
+        return Colors.yesbitOrange
     }
 
     var numberOfPages = 0

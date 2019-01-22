@@ -182,7 +182,7 @@ extension TokensViewController: UITableViewDelegate {
             self.delegate?.didRequest(token: token, in: self)
             handler(true)
         }
-        deleteAction.backgroundColor = Colors.lightBlue
+        deleteAction.backgroundColor = Colors.yesbitOrange
         let configuration = UISwipeActionsConfiguration(actions: [deleteAction])
         return configuration
     }
