@@ -33,7 +33,7 @@ class PassphraseViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = NSLocalizedString(
             "passphrase.seed.label.title",
-            value: "These 12 words are the only way to restore your Trust wallet. \nSave them somewhere safe and secret.",
+            value: "These 12 words are the only way to restore your Yesbit-wallet. \nSave them somewhere safe and secret.",
             comment: ""
         )
         return label

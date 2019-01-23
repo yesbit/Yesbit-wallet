@@ -104,7 +104,7 @@ class AppCoordinator: NSObject, Coordinator {
     private func showMigrationMessage() {
         let alertController = UIAlertController(
             title: "Great News! Big Update! 🚀",
-            message: "We have made a huge progress towards supporting and simplifying management of your tokens across blockchains. \n\nTake a look on how to create Multi-Coin Wallet in Trust!",
+            message: "We have made a huge progress towards supporting and simplifying management of your tokens across blockchains. \n\nTake a look on how to create Multi-Coin Wallet in Yesbit!",
             preferredStyle: UIAlertControllerStyle.alert
         )
         alertController.popoverPresentationController?.sourceView = self.navigationController.view
