@@ -134,7 +134,8 @@ enum RPCServer {
 
     var coin: Coin {
         switch self {
-        case .main, .test: return Coin.ethereum
+        case .main: return Coin.ethereum
+        case .test: return Coin.ethereumTest
         case .classic: return Coin.ethereumClassic
         case .callisto: return Coin.callisto
         case .poa: return Coin.poa
