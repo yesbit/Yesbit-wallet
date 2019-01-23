@@ -249,10 +249,10 @@
 "Watch" = "Watch";
 "Done" = "Done";
 "Manage" = "Manage";
-"passphrase.seed.label.title" = "These 12 words are the only way to restore your Trust wallet. \nSave them somewhere safe and secret.";
-"settings.analitics.answer.description" = "Help Trust improve user experience by sharing app daily diagnostic.";
-"settings.analitics.branch.description" = "Help Trust improve user engagement by sharing deep links redirects.";
-"settings.analitics.crashlytics.description" = "Help Trust developers to improve its product and service by automatically sending crash reports.";
+"passphrase.seed.label.title" = "These 12 words are the only way to restore your Yesbt-wallet. \nSave them somewhere safe and secret.";
+"settings.analitics.answer.description" = "Help Yesbit improve user experience by sharing app daily diagnostic.";
+"settings.analitics.branch.description" = "Help Yesbit improve user engagement by sharing deep links redirects.";
+"settings.analitics.crashlytics.description" = "Help Yesbit developers to improve its product and service by automatically sending crash reports.";
 "settings.privacy.title" = "Privacy";
 "Skip" = "Skip";
 "VerifyBackupPhrase" = "Verify Backup Phrase";
