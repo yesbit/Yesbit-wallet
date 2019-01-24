@@ -105,7 +105,7 @@ final class WalletCoordinator: Coordinator {
         keystore.createNewAccount(with: password, coin: coin) { result in
             switch result{
             case .success(let account):
-                //
+                self.setNewWalletName(for: account)
                 self.keystore.exportMnemonic(wallet: account) { mnemonicResult in
                     self.navigationController.topViewController?.hideLoading(animated: false)
                     switch mnemonicResult {
@@ -202,7 +202,13 @@ final class WalletCoordinator: Coordinator {
         let wallet = WalletInfo(type: type, info: keystore.storage.get(for: type))
         markAsMainWallet(for: wallet)
     }
-
+    
+    private func setNewWalletName(for account: Wallet) {
+        let type = WalletType.hd(account)
+        let wallet = WalletInfo(type: type, info: keystore.storage.get(for: type))
+        setNewWalletName(for: wallet)
+    }
+    
     private func markAsMainWallet(for wallet: WalletInfo) {
         let initialName = R.string.localizable.mainWallet()
         keystore.store(object: wallet.info, fields: [
@@ -210,7 +216,15 @@ final class WalletCoordinator: Coordinator {
             .mainWallet(true),
         ])
     }
-
+    
+    private func setNewWalletName(for wallet: WalletInfo) {
+        let initalName = WalletInfo.initialName(index: keystore.wallets.count - 1)
+        keystore.store(object: wallet.info, fields: [
+            .name(initalName),
+            .mainWallet(false),
+        ])
+    }
+    
     private func showConfirm(for account: Wallet, completedBackup: Bool) {
         let type = WalletType.hd(account)
         let wallet = WalletInfo(type: type, info: keystore.storage.get(for: type))
