@@ -54,7 +54,7 @@ final class WalletCoordinator: Coordinator {
     }
     
     private func pushAddWalletView(for coin: Coin) {
-        let controller = AddWalletViewController()
+        let controller = AddWalletViewController(keystore: keystore, for: coin)
         controller.delegate = self
         navigationController.pushViewController(controller, animated: true)
     }
@@ -97,7 +97,24 @@ final class WalletCoordinator: Coordinator {
             }
         }
     }
-
+    
+    func createNewWallet(coin: Coin) {
+        let text = R.string.localizable.creatingWallet() + "..."
+        navigationController.topViewController?.displayLoading(text: text, animated: false)
+        let password = PasswordGenerator.generateRandom()
+        keystore.createAccount(with: password) { result in
+            switch result{
+            case .success(let account):
+                self.keystore.exportMnemonic(wallet: account) { mnemonicResult in
+                    self.navigationController.topViewController?.hideLoading(animated: false)
+                }
+            case .failure(let error):
+                self.navigationController.topViewController?.hideLoading(animated: false)
+                self.navigationController.topViewController?.displayError(error: error)
+            }
+        }
+    }
+    
     func configureWhiteNavigation() {
         navigationController.navigationBar.tintColor = Colors.yesbitOrange
         navigationController.navigationBar.barTintColor = .white
@@ -220,8 +237,8 @@ extension WalletCoordinator: AddWalletViewControllerDelegate {
         createInstantWallet()
     }
     
-    func didPressImportWallet(in viewController: AddWalletViewController) {
-        pushImportWallet()
+    func didPressImportWallet(coin: Coin, in viewController: AddWalletViewController) {
+        pushImportWalletView(for: coin)
     }
 }
 
@@ -279,6 +296,7 @@ extension WalletCoordinator: ImportMainWalletViewControllerDelegate {
 extension WalletCoordinator: SelectCoinViewControllerDelegate {
     func didSelect(coin: Coin, in controller: SelectCoinViewController) {
 //        pushImportWalletView(for: coin)
-        setWelcomeView()
+//        setWelcomeView()
+        pushAddWalletView(for: coin)
     }
 }
