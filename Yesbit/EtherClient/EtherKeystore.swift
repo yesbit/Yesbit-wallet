@@ -96,6 +96,15 @@ class EtherKeystore: Keystore {
             }
         }
     }
+    
+    func createNewAccount(with password: String, coin: Coin, completion: @escaping (Result<Wallet, KeystoreError>) -> Void) {
+        DispatchQueue.global(qos: .userInitiated).async {
+            let account = self.createNewAccout(password: password, coin: coin)
+            DispatchQueue.main.async {
+                completion(.success(account))
+            }
+        }
+    }
 
     func importWallet(type: ImportType, coin: Coin, completion: @escaping (Result<WalletInfo, KeystoreError>) -> Void) {
         let newPassword = PasswordGenerator.generateRandom()
@@ -178,6 +187,16 @@ class EtherKeystore: Keystore {
         let wallet = try! keyStore.createWallet(
             password: password,
             derivationPaths: derivationPaths
+        )
+        let _ = setPassword(password, for: wallet)
+        return wallet
+    }
+    
+    func createNewAccout(password: String, coin: Coin) -> Wallet {
+        let derivationPath = [ coin.derivationPath(at: 0) ]
+        let wallet = try! keyStore.createWallet(
+            password: password,
+            derivationPaths: derivationPath
         )
         let _ = setPassword(password, for: wallet)
         return wallet
