@@ -98,15 +98,22 @@ final class WalletCoordinator: Coordinator {
         }
     }
     
-    func createNewWallet(coin: Coin) {
+    func createNewWallet(for coin: Coin) {
         let text = R.string.localizable.creatingWallet() + "..."
         navigationController.topViewController?.displayLoading(text: text, animated: false)
         let password = PasswordGenerator.generateRandom()
-        keystore.createAccount(with: password) { result in
+        keystore.createNewAccount(with: password, coin: coin) { result in
             switch result{
             case .success(let account):
+                //
                 self.keystore.exportMnemonic(wallet: account) { mnemonicResult in
                     self.navigationController.topViewController?.hideLoading(animated: false)
+                    switch mnemonicResult {
+                    case .success(let words):
+                        self.pushBackup(for: account, words: words)
+                    case .failure(let error):
+                        self.navigationController.displayError(error: error)
+                    }
                 }
             case .failure(let error):
                 self.navigationController.topViewController?.hideLoading(animated: false)
@@ -233,8 +240,8 @@ extension WalletCoordinator: WelcomeViewControllerDelegate {
 }
 
 extension WalletCoordinator: AddWalletViewControllerDelegate {
-    func didPressCreateWallet(in viewController: AddWalletViewController) {
-        createInstantWallet()
+    func didPressCreateWallet(coin: Coin, in viewController: AddWalletViewController) {
+        createNewWallet(for: coin)
     }
     
     func didPressImportWallet(coin: Coin, in viewController: AddWalletViewController) {

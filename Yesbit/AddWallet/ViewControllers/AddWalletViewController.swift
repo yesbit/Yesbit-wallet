@@ -5,7 +5,7 @@ import UIKit
 import TrustCore
 
 protocol AddWalletViewControllerDelegate: class {
-    func didPressCreateWallet(in viewController: AddWalletViewController)
+    func didPressCreateWallet(coin: Coin, in viewController: AddWalletViewController)
     func didPressImportWallet(coin: Coin, in viewController: AddWalletViewController)
 }
 // this is an extention made from the welcome view controller, but this is used for importing
@@ -144,7 +144,7 @@ final class AddWalletViewController: UIViewController {
     }
     
     @IBAction func start() {
-        delegate?.didPressCreateWallet(in: self)
+        delegate?.didPressCreateWallet(coin: self.coin, in: self)
     }
     
     @IBAction func importFlow() {
