@@ -26,8 +26,6 @@ class SelectCoinViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("selecting new wallet")
-        print(coins)
         tableView.separatorColor = StyleLayout.TableView.separatorColor
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.register(R.nib.coinViewCell(), forCellReuseIdentifier: R.nib.coinViewCell.name)

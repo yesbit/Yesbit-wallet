@@ -52,6 +52,12 @@ final class WalletCoordinator: Coordinator {
         controller.delegate = self
         navigationController.pushViewController(controller, animated: true)
     }
+    
+    private func pushAddWalletView(for coin: Coin) {
+        let controller = AddWalletViewController()
+        controller.delegate = self
+        navigationController.pushViewController(controller, animated: true)
+    }
 
     private func setWelcomeView() {
         let controller = WelcomeViewController()
@@ -209,6 +215,16 @@ extension WalletCoordinator: WelcomeViewControllerDelegate {
     }
 }
 
+extension WalletCoordinator: AddWalletViewControllerDelegate {
+    func didPressCreateWallet(in viewController: AddWalletViewController) {
+        createInstantWallet()
+    }
+    
+    func didPressImportWallet(in viewController: AddWalletViewController) {
+        pushImportWallet()
+    }
+}
+
 extension WalletCoordinator: ImportWalletViewControllerDelegate {
     func didImportAccount(account: WalletInfo, fields: [WalletInfoField], in viewController: ImportWalletViewController) {
         keystore.store(object: account.info, fields: fields)
@@ -262,6 +278,7 @@ extension WalletCoordinator: ImportMainWalletViewControllerDelegate {
 
 extension WalletCoordinator: SelectCoinViewControllerDelegate {
     func didSelect(coin: Coin, in controller: SelectCoinViewController) {
-        pushImportWalletView(for: coin)
+//        pushImportWalletView(for: coin)
+        setWelcomeView()
     }
 }
