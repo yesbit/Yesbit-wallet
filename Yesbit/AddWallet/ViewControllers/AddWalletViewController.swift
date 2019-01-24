@@ -15,16 +15,20 @@ final class AddWalletViewController: UIViewController {
     var viewModel = AddWalletViewModel()
     weak var delegate: AddWalletViewControllerDelegate?
     
-    let keystore: Keystore
-    let coin: Coin
+    var keystore: Keystore
+    var coin: Coin
     
-    convenience init(
+    init(
         keystore: Keystore,
         for coin: Coin
     ) {
-        self.init(nibName: nil, bundle: nil)
         self.keystore = keystore
         self.coin = coin
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
     // this is the same as welcome view controller
