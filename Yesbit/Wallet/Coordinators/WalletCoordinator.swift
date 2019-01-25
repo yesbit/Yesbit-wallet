@@ -140,7 +140,7 @@ final class WalletCoordinator: Coordinator {
         controller.navigationItem.backBarButtonItem = nil
         controller.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
         navigationController.setNavigationBarHidden(false, animated: true)
-        navigationController.pushViewController(controller, animated: true)
+        navigationController.viewControllers = [controller]
     }
 
     private func setImportMainWallet() {
