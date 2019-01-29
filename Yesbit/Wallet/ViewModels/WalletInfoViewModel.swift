@@ -58,16 +58,16 @@ struct WalletInfoViewModel {
                 ),
             ]
         case .hd(let account):
-            if wallet.multiWallet {
-                return [
-                    FormSection(
-                        footer: R.string.localizable.multiCoinWallet(),
-                        rows: [
-                            .exportRecoveryPhrase(account),
-                        ]
-                    ),
-                ]
-            }
+//            if wallet.multiWallet {
+//                return [
+//                    FormSection(
+//                        footer: R.string.localizable.multiCoinWallet(),
+//                        rows: [
+//                            .exportRecoveryPhrase(account),
+//                        ]
+//                    ),
+//                ]
+//            }
             return [
                 FormSection(
                     rows: [

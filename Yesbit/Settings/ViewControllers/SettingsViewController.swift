@@ -77,42 +77,43 @@ final class SettingsViewController: FormViewController, Coordinator {
             
             <<< walletsRow(for: session.account)
 
-            +++ Section(R.string.localizable.settingsSecurityLabelTitle())
+//            security section, TODO
+//            +++ Section(R.string.localizable.settingsSecurityLabelTitle())
 
-            <<< SwitchRow(Values.passcodeRow) { [weak self] in
-                $0.title = self?.viewModel.passcodeTitle
-                $0.value = self?.isPasscodeEnabled
-            }.onChange { [unowned self] row in
-                if row.value == true {
-                    self.setPasscode { result in
-                        row.value = result
-                        row.updateCell()
-                    }
-                } else {
-                    self.lock.deletePasscode()
-                    self.updateAutoLockRow(with: AutoLock.immediate)
-                }
-            }.cellSetup { cell, _ in
-                cell.imageView?.image = R.image.settings_colorful_security()
-            }
+//            <<< SwitchRow(Values.passcodeRow) { [weak self] in
+//                $0.title = self?.viewModel.passcodeTitle
+//                $0.value = self?.isPasscodeEnabled
+//            }.onChange { [unowned self] row in
+//                if row.value == true {
+//                    self.setPasscode { result in
+//                        row.value = result
+//                        row.updateCell()
+//                    }
+//                } else {
+//                    self.lock.deletePasscode()
+//                    self.updateAutoLockRow(with: AutoLock.immediate)
+//                }
+//            }.cellSetup { cell, _ in
+//                cell.imageView?.image = R.image.settings_colorful_security()
+//            }
 
-            <<< autoLockRow
-
-            <<< AppFormAppearance.button { [weak self] row in
-                row.cellStyle = .value1
-                row.presentationMode = .show(controllerProvider: ControllerProvider<UIViewController>.callback {
-                    let controller = NotificationsViewController()
-                    controller.didChange = { [weak self] change in
-                        self?.run(action: .pushNotifications(change))
-                    }
-                    return controller
-                }, onDismiss: { _ in
-            })
-            }.cellUpdate { cell, _ in
-                cell.imageView?.image = R.image.settings_colorful_notifications()
-                cell.textLabel?.text = R.string.localizable.settingsPushNotificationsTitle()
-                cell.accessoryType = .disclosureIndicator
-            }
+//            <<< autoLockRow
+//
+//            <<< AppFormAppearance.button { [weak self] row in
+//                row.cellStyle = .value1
+//                row.presentationMode = .show(controllerProvider: ControllerProvider<UIViewController>.callback {
+//                    let controller = NotificationsViewController()
+//                    controller.didChange = { [weak self] change in
+//                        self?.run(action: .pushNotifications(change))
+//                    }
+//                    return controller
+//                }, onDismiss: { _ in
+//            })
+//            }.cellUpdate { cell, _ in
+//                cell.imageView?.image = R.image.settings_colorful_notifications()
+//                cell.textLabel?.text = R.string.localizable.settingsPushNotificationsTitle()
+//                cell.accessoryType = .disclosureIndicator
+//            }
 
             +++ Section()
 

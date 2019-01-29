@@ -26,14 +26,14 @@ final class AboutViewController: FormViewController {
 
         form +++ Section()
 
-            <<< linkProvider(type: .sourceCode)
+//            <<< linkProvider(type: .sourceCode)
 
 //            +++ Section()
 //
 //            <<< linkProvider(type: .privacyPolicy)
 //            <<< linkProvider(type: .termsOfService)
 //
-            +++ Section()
+//            +++ Section()
 
             <<< AppFormAppearance.button { button in
                 button.title = R.string.localizable.settingsEmailUsButtonTitle()

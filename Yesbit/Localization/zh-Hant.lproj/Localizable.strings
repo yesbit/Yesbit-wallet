@@ -1,5 +1,5 @@
 "Advanced" = "高級設置";
-"app.device.jailbreak.description" = "任何“越獄”應用都可以訪問 Trust 的鑰匙串數據和竊取你的錢包！請立刻抹掉這個錢包，並在另外一台安全設備上恢復。";
+"app.device.jailbreak.description" = "任何“越獄”應用都可以訪問 Yesbit 的鑰匙串數據和竊取你的錢包！請立刻抹掉這個錢包，並在另外一台安全設備上恢復。";
 "app.device.jailbreak.title" = "設備安全受損";
 "Cancel" = "取消";
 "configureTransaction.error.gasFeeTooHigh" = "Gas 費用太高，最大可用: %@";

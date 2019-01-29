@@ -52,6 +52,12 @@ final class WalletCoordinator: Coordinator {
         controller.delegate = self
         navigationController.pushViewController(controller, animated: true)
     }
+    
+    private func pushAddWalletView(for coin: Coin) {
+        let controller = AddWalletViewController(keystore: keystore, for: coin)
+        controller.delegate = self
+        navigationController.pushViewController(controller, animated: true)
+    }
 
     private func setWelcomeView() {
         let controller = WelcomeViewController()
@@ -91,9 +97,33 @@ final class WalletCoordinator: Coordinator {
             }
         }
     }
-
+    
+    func createNewWallet(for coin: Coin) {
+        let text = R.string.localizable.creatingWallet() + "..."
+        navigationController.topViewController?.displayLoading(text: text, animated: false)
+        let password = PasswordGenerator.generateRandom()
+        keystore.createNewAccount(with: password, coin: coin) { result in
+            switch result{
+            case .success(let account):
+                self.setNewWalletName(for: account)
+                self.keystore.exportMnemonic(wallet: account) { mnemonicResult in
+                    self.navigationController.topViewController?.hideLoading(animated: false)
+                    switch mnemonicResult {
+                    case .success(let words):
+                        self.pushBackup(for: account, words: words)
+                    case .failure(let error):
+                        self.navigationController.displayError(error: error)
+                    }
+                }
+            case .failure(let error):
+                self.navigationController.topViewController?.hideLoading(animated: false)
+                self.navigationController.topViewController?.displayError(error: error)
+            }
+        }
+    }
+    
     func configureWhiteNavigation() {
-        navigationController.navigationBar.tintColor = Colors.blue
+        navigationController.navigationBar.tintColor = Colors.yesbitOrange
         navigationController.navigationBar.barTintColor = .white
         navigationController.navigationBar.setBackgroundImage(UIImage(), for: .default)
         navigationController.navigationBar.shadowImage = UIImage()
@@ -110,7 +140,7 @@ final class WalletCoordinator: Coordinator {
         controller.navigationItem.backBarButtonItem = nil
         controller.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
         navigationController.setNavigationBarHidden(false, animated: true)
-        navigationController.pushViewController(controller, animated: true)
+        navigationController.viewControllers = [controller]
     }
 
     private func setImportMainWallet() {
@@ -172,7 +202,13 @@ final class WalletCoordinator: Coordinator {
         let wallet = WalletInfo(type: type, info: keystore.storage.get(for: type))
         markAsMainWallet(for: wallet)
     }
-
+    
+    private func setNewWalletName(for account: Wallet) {
+        let type = WalletType.hd(account)
+        let wallet = WalletInfo(type: type, info: keystore.storage.get(for: type))
+        setNewWalletName(for: wallet)
+    }
+    
     private func markAsMainWallet(for wallet: WalletInfo) {
         let initialName = R.string.localizable.mainWallet()
         keystore.store(object: wallet.info, fields: [
@@ -180,7 +216,15 @@ final class WalletCoordinator: Coordinator {
             .mainWallet(true),
         ])
     }
-
+    
+    private func setNewWalletName(for wallet: WalletInfo) {
+        let initalName = WalletInfo.initialName(index: keystore.wallets.count - 1)
+        keystore.store(object: wallet.info, fields: [
+            .name(initalName),
+            .mainWallet(false),
+        ])
+    }
+    
     private func showConfirm(for account: Wallet, completedBackup: Bool) {
         let type = WalletType.hd(account)
         let wallet = WalletInfo(type: type, info: keystore.storage.get(for: type))
@@ -206,6 +250,16 @@ extension WalletCoordinator: WelcomeViewControllerDelegate {
 
     func didPressCreateWallet(in viewController: WelcomeViewController) {
         createInstantWallet()
+    }
+}
+
+extension WalletCoordinator: AddWalletViewControllerDelegate {
+    func didPressCreateWallet(coin: Coin, in viewController: AddWalletViewController) {
+        createNewWallet(for: coin)
+    }
+    
+    func didPressImportWallet(coin: Coin, in viewController: AddWalletViewController) {
+        pushImportWalletView(for: coin)
     }
 }
 
@@ -262,6 +316,8 @@ extension WalletCoordinator: ImportMainWalletViewControllerDelegate {
 
 extension WalletCoordinator: SelectCoinViewControllerDelegate {
     func didSelect(coin: Coin, in controller: SelectCoinViewController) {
-        pushImportWalletView(for: coin)
+//        pushImportWalletView(for: coin)
+//        setWelcomeView()
+        pushAddWalletView(for: coin)
     }
 }

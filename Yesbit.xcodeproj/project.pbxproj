@@ -236,6 +236,8 @@
 		29FF130A1F75F67200AFD326 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF13091F75F67200AFD326 /* Address.swift */; };
 		29FF130D1F7626E800AFD326 /* FakeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF130C1F7626E800AFD326 /* FakeNavigationController.swift */; };
 		29FF6D6B2011D2AF00A3011C /* InCoordinatorError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29FF6D6A2011D2AF00A3011C /* InCoordinatorError.swift */; };
+		3A332C6321F90B0C004B0116 /* AddWalletViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A332C6221F90B0C004B0116 /* AddWalletViewController.swift */; };
+		3A332C6521F90BC6004B0116 /* AddWalletViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A332C6421F90BC6004B0116 /* AddWalletViewModel.swift */; };
 		4E9A9D0820B2C52500180054 /* CoinTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E9A9D0720B2C52500180054 /* CoinTicker.swift */; };
 		4EEE540D207996EF007D300D /* TokensDataStoreTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE540C207996EF007D300D /* TokensDataStoreTest.swift */; };
 		4EEE540F20799701007D300D /* CoinTicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEE540E20799700007D300D /* CoinTicker.swift */; };
@@ -731,6 +733,8 @@
 		29FF6D6F2011E1EE00A3011C /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		29FF6D702011E1F300A3011C /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/Localizable.strings; sourceTree = "<group>"; };
 		29FF6D712011E20500A3011C /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3A332C6221F90B0C004B0116 /* AddWalletViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWalletViewController.swift; sourceTree = "<group>"; };
+		3A332C6421F90BC6004B0116 /* AddWalletViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWalletViewModel.swift; sourceTree = "<group>"; };
 		477899BEAA4489DA423E8857 /* Pods-TrustUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrustUITests/Pods-TrustUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		486727FADFF5D4F43B985920 /* Pods_OpenInTrust.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenInTrust.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DB8204016307EAFC079EA48 /* Pods-Trust.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Trust.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Trust/Pods-Trust.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1058,6 +1062,7 @@
 		2912CCF71F6A830700C6CBE3 /* Yesbit */ = {
 			isa = PBXGroup;
 			children = (
+				3A332C5E21F90A86004B0116 /* AddWallet */,
 				73ACEEF620163B4E003DD71D /* Lock */,
 				29E6E0681FE897BB0079265A /* Browser */,
 				29AD8A0A1F93FBB7008E10E7 /* Foundation */,
@@ -2010,6 +2015,39 @@
 				732E0F532022786400B39C1F /* LockCreatePasscodeCoordinatorTest.swift */,
 			);
 			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		3A332C5E21F90A86004B0116 /* AddWallet */ = {
+			isa = PBXGroup;
+			children = (
+				3A332C6121F90AAD004B0116 /* ViewControllers */,
+				3A332C6021F90AA4004B0116 /* ViewModels */,
+				3A332C5F21F90A9A004B0116 /* Views */,
+			);
+			path = AddWallet;
+			sourceTree = "<group>";
+		};
+		3A332C5F21F90A9A004B0116 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3A332C6021F90AA4004B0116 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				3A332C6421F90BC6004B0116 /* AddWalletViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3A332C6121F90AAD004B0116 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A332C6221F90B0C004B0116 /* AddWalletViewController.swift */,
+			);
+			path = ViewControllers;
 			sourceTree = "<group>";
 		};
 		615F10571FCBEF6A008A45AF /* Views */ = {
@@ -3081,6 +3119,7 @@
 				777871402086F94A00CF7303 /* AppStyle.swift in Sources */,
 				29E6E0701FEA12910079265A /* TransactionConfigurator.swift in Sources */,
 				775DF43E203E38D2009CD082 /* NonFungibleTokenViewCell.swift in Sources */,
+				3A332C6321F90B0C004B0116 /* AddWalletViewController.swift in Sources */,
 				7301BA9620AB1E5600E1AFE5 /* CookiesStore.swift in Sources */,
 				29CA4B791F6FBFD50032313D /* Balance.swift in Sources */,
 				73DE7B35209884AB00AE04E6 /* NonFungibleCollectionViewCellModel.swift in Sources */,
@@ -3111,6 +3150,7 @@
 				A2E895D020953404003D5303 /* QRGenerator.swift in Sources */,
 				737EEDDA201BE3A8009D9D5D /* Lock.swift in Sources */,
 				291F9EA020FF3C6B00D5266A /* DeveloperViewController.swift in Sources */,
+				3A332C6521F90BC6004B0116 /* AddWalletViewModel.swift in Sources */,
 				29FF12F81F747D6C00AFD326 /* Error.swift in Sources */,
 				73BAA8D1201B2FBC00D6DD75 /* LockCreatePasscodeViewController.swift in Sources */,
 				29AD8A061F93DC8C008E10E7 /* PushDevice.swift in Sources */,
@@ -3609,13 +3649,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9873B38DWV;
-				INFOPLIST_FILE = TrustUITests/Info.plist;
+				DEVELOPMENT_TEAM = 5QPW5G8NZ4;
+				INFOPLIST_FILE = YesitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sixdays.TrustUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Trust;
+				TEST_TARGET_NAME = Yesbit;
 			};
 			name = Debug;
 		};
@@ -3625,13 +3665,13 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9873B38DWV;
-				INFOPLIST_FILE = TrustUITests/Info.plist;
+				DEVELOPMENT_TEAM = 5QPW5G8NZ4;
+				INFOPLIST_FILE = YesitUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.sixdays.TrustUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Trust;
+				TEST_TARGET_NAME = Yesbit;
 			};
 			name = Release;
 		};

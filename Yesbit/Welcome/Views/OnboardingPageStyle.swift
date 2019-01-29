@@ -8,7 +8,8 @@ struct OnboardingPageStyle {
     }
 
     var titleColor: UIColor {
-        return UIColor(hex: "438FCA")
+//        return UIColor(hex: "438FCA")
+        return Colors.yesbitOrange
     }
 
     var subtitleFont: UIFont {
@@ -16,6 +17,7 @@ struct OnboardingPageStyle {
     }
 
     var subtitleColor: UIColor {
-        return UIColor(hex: "69A5D5")
+//        return UIColor(hex: "69A5D5")
+        return Colors.yesbitOrange
     }
 }
