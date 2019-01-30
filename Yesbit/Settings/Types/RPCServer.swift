@@ -94,19 +94,6 @@ enum RPCServer {
         return URL(string: urlString)!
     }
 
-    /*var remoteURL: URL {
-        let urlString: String = {
-            switch self {
-            case .main, .test: return "https://api.trustwalletapp.com"
-            case .classic: return "https://classic.trustwalletapp.com"
-            case .callisto: return "https://callisto.trustwalletapp.com"
-            case .poa: return "https://poa.trustwalletapp.com"
-            case .gochain: return "https://gochain.trustwalletapp.com"
-            }
-        }()
-        return URL(string: urlString)!
-    }*/
-
     var ensContract: EthereumAddress {
         // https://docs.ens.domains/en/latest/introduction.html#ens-on-ethereum
         switch self {
@@ -120,7 +107,6 @@ enum RPCServer {
     var openseaPath: String {
         switch self {
         case .main, .test, .classic, .poa, .callisto, .gochain: return Constants.dappsOpenSea
-//        case .main, .test, .poa, .callisto, .gochain: return Constants.dappsOpenSea
         }
     }
 
