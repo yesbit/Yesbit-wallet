@@ -1,10 +1,11 @@
-# Trust - Ethereum Wallet and Web3 DApp Browser for iOS
+# Yesbit-wallet
+
 
 <!--[![Build Status](https://travis-ci.org/TrustWallet/trust-wallet-ios.svg?branch=master)](https://travis-ci.org/TrustWallet/trust-wallet-ios)-->
 <!--[![Black Duck Security Risk](https://copilot.blackducksoftware.com/github/repos/TrustWallet/trust-wallet-ios/branches/master/badge-risk.svg)](https://copilot.blackducksoftware.com/github/repos/TrustWallet/trust-wallet-ios/branches/master)-->
 <!--[![License](https://img.shields.io/badge/license-GPL3-green.svg?style=flat)](https://github.com/TrustWallet/trust-wallet-ios/blob/master/LICENSE)-->
 
-Welcome to Trust's open source iOS app!
+Welcome to Yesbit's open source iOS app. 
 
 ## Getting Started
 
@@ -35,3 +36,6 @@ product, for our community, in a safe and open space. We work as we live, as
 kind and considerate human beings who learn and grow from giving and receiving
 positive, constructive feedback. We reserve the right to delete or ban any
 behavior violating this base foundation of respect.
+
+Powered by: 
+[Trust Wallet](https://trustwallet.com/)
