@@ -99,8 +99,8 @@ enum URLServiceProvider {
         case .dappsOpenSea:
             return "https://opensea.io"
         case .trustWallet:
-//            return "https://trustwalletapp.com"
-            return "emptyURL"
+            return "https://trustwalletapp.com"
+//            return "emptyURL"
         }
     }
 

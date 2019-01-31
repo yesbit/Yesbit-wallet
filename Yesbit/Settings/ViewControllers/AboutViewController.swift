@@ -27,9 +27,6 @@ final class AboutViewController: FormViewController {
         form +++ Section()
 
             <<< linkProvider(type: .sourceCode)
-
-            +++ Section()
-
             <<< linkProvider(type: .privacyPolicy)
             <<< linkProvider(type: .termsOfService)
 
@@ -45,19 +42,19 @@ final class AboutViewController: FormViewController {
                     cell.textLabel?.textColor = .black
             })
 
-            +++ Section()
-
-            <<< TextRow {
-                $0.title = R.string.localizable.settingsVersionLabelTitle()
-                $0.value = Bundle.main.fullVersion
-                $0.disabled = true
-            }
-
             +++ Section(R.string.localizable.poweredBy())
 
             <<< linkProvider(type: .infura)
             <<< linkProvider(type: .dappsOpenSea)
             <<< linkProvider(type: .trustWallet)
+        
+            +++ Section()
+            
+            <<< TextRow {
+                $0.title = R.string.localizable.settingsVersionLabelTitle()
+                $0.value = Bundle.main.fullVersion
+                $0.disabled = true
+        }
     }
 
     private func linkProvider(
