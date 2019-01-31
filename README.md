@@ -17,6 +17,12 @@ Welcome to Yesbit's open source iOS app.
 1. Run the project and fix any switch statement unexhaustive error
 Note: if there is error about not able to locate R.generated.swift, let me know
 
+## Features
+
+1. Support connection with Ethereum Test net, Ropsten
+1. Advocate [Yesbit](https://yesbit.pro)
+1. Yesbit Special Orange UI !!!!
+
 ## Contributing
 
 We intend for this project to be an educational resource: we are excited to
