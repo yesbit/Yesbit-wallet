@@ -24,5 +24,6 @@ struct Colors {
     static let lightDark = UIColor(hex: "333333")
     static let groupTable = UIColor(hex: "efeff4")
 //    static let yesbitOrange = UIColor(hex: "eb8908")
-    static let yesbitOrange = UIColor(hex: "FF6600")
+//    static let yesbitOrange = UIColor(hex: "FF6600")
+    static let yesbitOrange = UIColor(hex: "F26722")
 }

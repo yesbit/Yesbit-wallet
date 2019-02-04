@@ -1,14 +1,11 @@
-# Trust - Ethereum Wallet and Web3 DApp Browser for iOS
+# Yesbit-wallet
 
-[![Build Status](https://travis-ci.org/TrustWallet/trust-wallet-ios.svg?branch=master)](https://travis-ci.org/TrustWallet/trust-wallet-ios)
-[![Black Duck Security Risk](https://copilot.blackducksoftware.com/github/repos/TrustWallet/trust-wallet-ios/branches/master/badge-risk.svg)](https://copilot.blackducksoftware.com/github/repos/TrustWallet/trust-wallet-ios/branches/master)
-[![License](https://img.shields.io/badge/license-GPL3-green.svg?style=flat)](https://github.com/TrustWallet/trust-wallet-ios/blob/master/LICENSE)
 
-[<img src="https://raw.githubusercontent.com/TrustWallet/trust-wallet-ios/master/resources/iphone_cover.png">](https://itunes.apple.com/us/app/trust-ethereum-wallet/id1288339409)
+<!--[![Build Status](https://travis-ci.org/TrustWallet/trust-wallet-ios.svg?branch=master)](https://travis-ci.org/TrustWallet/trust-wallet-ios)-->
+<!--[![Black Duck Security Risk](https://copilot.blackducksoftware.com/github/repos/TrustWallet/trust-wallet-ios/branches/master/badge-risk.svg)](https://copilot.blackducksoftware.com/github/repos/TrustWallet/trust-wallet-ios/branches/master)-->
+<!--[![License](https://img.shields.io/badge/license-GPL3-green.svg?style=flat)](https://github.com/TrustWallet/trust-wallet-ios/blob/master/LICENSE)-->
 
-[<img src=resources/app-store-badge.png height="88">](https://itunes.apple.com/us/app/trust-ethereum-wallet/id1288339409)
-
-Welcome to Trust's open source iOS app!
+Welcome to Yesbit's open source iOS app. 
 
 ## Getting Started
 
@@ -19,6 +16,12 @@ Welcome to Trust's open source iOS app!
 1. Add `case ethereumTest = 1` in Pods/Pods/TrustCore/Coin.swift
 1. Run the project and fix any switch statement unexhaustive error
 Note: if there is error about not able to locate R.generated.swift, let me know
+
+## Features
+
+1. Support connection with Ethereum Test net, Ropsten
+1. Advocate [Yesbit](https://yesbit.pro)
+1. Yesbit Special Orange UI !!!!
 
 ## Contributing
 
@@ -40,5 +43,5 @@ kind and considerate human beings who learn and grow from giving and receiving
 positive, constructive feedback. We reserve the right to delete or ban any
 behavior violating this base foundation of respect.
 
-Help with localization?
-Here is a public link to join localization project: https://lokalise.co/signup/3947163159df13df851b51.98101647/all/
+Powered by: 
+[Trust Wallet](https://trustwallet.com/)

@@ -91,16 +91,16 @@ enum URLServiceProvider {
         case .sourceCode:
             return "https://github.com/yesbit/trust-wallet-ios"
         case .privacyPolicy:
-            return "https://trustwalletapp.com/privacy-policy.html"
+            return "https://yesbit.pro/privacy"
         case .termsOfService:
-            return "https://trustwalletapp.com/terms.html"
+            return "https://yesbit.pro/tas"
         case .infura:
             return "https://infura.io/"
         case .dappsOpenSea:
             return "https://opensea.io"
         case .trustWallet:
-//            return "https://trustwalletapp.com"
-            return "emptyURL"
+            return "https://trustwalletapp.com"
+//            return "emptyURL"
         }
     }
 
