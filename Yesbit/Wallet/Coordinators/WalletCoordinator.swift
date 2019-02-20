@@ -102,6 +102,7 @@ final class WalletCoordinator: Coordinator {
         let text = R.string.localizable.creatingWallet() + "..."
         navigationController.topViewController?.displayLoading(text: text, animated: false)
         let password = PasswordGenerator.generateRandom()
+        print(password)
         keystore.createNewAccount(with: password, coin: coin) { result in
             switch result{
             case .success(let account):

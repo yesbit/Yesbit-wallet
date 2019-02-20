@@ -74,7 +74,7 @@ enum ButtonStyle: Int {
 
     var textColorHighlighted: UIColor {
         switch self {
-        case .solid, .squared: return UIColor(white: 1, alpha: 0.8)
+        case .solid, .squared: return Colors.yesbitOrange
         case .border: return .white
         case .borderless, .clear: return Colors.yesbitOrange
         }
@@ -120,6 +120,7 @@ class Button: UIButton {
         titleLabel?.font = style.font
         setTitleColor(style.textColor, for: .normal)
         setTitleColor(style.textColorHighlighted, for: .highlighted)
+        setTitleColor(style.textColorHighlighted, for: .selected)
         setBackgroundColor(style.backgroundColorHighlighted, forState: .highlighted)
         setBackgroundColor(style.backgroundColorHighlighted, forState: .selected)
         setBackgroundColor(style.backgroundColorDisabled, forState: .disabled)
