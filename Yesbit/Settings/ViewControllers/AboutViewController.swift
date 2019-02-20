@@ -26,7 +26,7 @@ final class AboutViewController: FormViewController {
 
         form +++ Section()
 
-            <<< linkProvider(type: .sourceCode)
+//            <<< linkProvider(type: .sourceCode)
             <<< linkProvider(type: .privacyPolicy)
             <<< linkProvider(type: .termsOfService)
 
